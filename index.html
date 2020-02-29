@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Color Picker</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@
 
 <body id="page-top">
   <div id="wrapper">
-    <ul id="kanvas" class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion kanvas" id="accordionSidebar">
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
@@ -379,42 +379,6 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
-
+  <script src="style.js"></script>
 </body>
-
 </html>
-
-<script>
-let kanvas = document.querySelector("#kanvas");
-
-let praymeri = document.querySelector("#praymeri");
-let sukses = document.querySelector("#sukses");
-let denjer = document.querySelector("#denjer");
-let warnyng = document.querySelector("#warnyng");
-let invo = document.querySelector("#invo");
-
-praymeri.addEventListener("click", function()
-{
-    kanvas.setAttribute("class","bg-primary navbar-nav sidebar sidebar-dark accordion");
-});
-
-sukses.addEventListener("click", function()
-{
-    kanvas.setAttribute("class","bg-success navbar-nav sidebar sidebar-dark accordion");
-});
-
-denjer.addEventListener("click", function()
-{
-    kanvas.setAttribute("class","bg-danger navbar-nav sidebar sidebar-dark accordion");
-});
-
-warnyng.addEventListener("click", function()
-{
-    kanvas.setAttribute("class","bg-warning navbar-nav sidebar sidebar-dark accordion");
-});
-
-invo.addEventListener("click", function()
-{
-    kanvas.setAttribute("class","bg-info navbar-nav sidebar sidebar-dark accordion");
-});
-</script>
